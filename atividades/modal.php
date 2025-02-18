@@ -4,27 +4,32 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="modalLabel">Eliminar Atividade</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 Deseja realmente eliminar esta atividade?
             </div>
             <div class="modal-footer">
-                <a id="confirm" class="btn btn-primary" href="#">Sim</a>
-                <a id="cancel" class="btn btn-secondary" data-dismiss="modal">Não</a>
+                <a id="confirm" class="btn btn-danger" href="#">Sim</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    $('#delete-modal').on('show.bs.modal', function(event) {
-        var button = $(event.relatedTarget);
-        var atividadeId = button.data('atividade');
-        var modal = $(this);
-        modal.find('.modal-title').text('Eliminar atividade nº ' + atividadeId);
-        modal.find('#confirm').attr('href', 'delete.php?id=' + atividadeId);
+    document.addEventListener('DOMContentLoaded', function() {
+        const deleteModal = document.getElementById('delete-modal');
+        if (deleteModal) {
+            deleteModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const atividadeId = button.getAttribute('data-atividade');
+                const modalTitle = this.querySelector('.modal-title');
+                const confirmLink = this.querySelector('#confirm');
+
+                modalTitle.textContent = 'Eliminar atividade nº ' + atividadeId;
+                confirmLink.href = 'delete.php?id=' + atividadeId;
+            });
+        }
     });
 </script>

@@ -87,7 +87,7 @@ include(HEADER_TEMPLATE);
                                 <a href="edit.php?id=<?php echo $atividade['id']; ?>" class="btn btn-warning btn-sm mr-2">
                                     <i class="fa fa-pencil"></i> Editar
                                 </a>
-                                <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete-modal" data-atividade="<?php echo $atividade['id']; ?>">
+                                <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete-modal" data-atividade="<?php echo $atividade['id']; ?>">
                                     <i class="fa fa-trash"></i> Eliminar
                                 </a>
                             </div>
