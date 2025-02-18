@@ -1,0 +1,93 @@
+# Arquivos de ambiente
+.env
+.env.backup
+.env.production
+
+# Arquivos de configuração
+config.php
+/config/*.php
+
+# Dependências
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# IDEs e editores
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools/
+*.code-workspace
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e dados temporários
+*.log
+/logs/
+/temp/
+/tmp/
+*.tmp
+*.swp
+*.bak
+*.cache
+
+# Arquivos de upload
+/uploads/
+/public/uploads/
+/storage/uploads/
+
+# Arquivos de sessão
+/sessions/
+/temp/sessions/
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Arquivos de compilação
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Arquivos de pacote
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Arquivos específicos do projeto
+/erros/erros.log
+/inc/database.local.php
+
+# Arquivos de teste e cobertura
+/phpunit.xml
+/tests/coverage/
+.phpunit.result.cache
+
+# Documentação gerada
+/docs/
+/phpdoc/
+
+# Outros
+*.sql
+*.csv
+*.xls
+*.xlsx
+*.pdf
+.htaccess
+robots.txt
+sitemap.xml

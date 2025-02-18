@@ -1,6 +1,3 @@
-Aqui está um README.md bem estruturado para o seu projeto:
-
-```markdown
 # Sistema de Gestão de Atividades
 
 Um sistema web desenvolvido em PHP para gestão de atividades escolares/académicas, permitindo o registo, visualização, edição e eliminação de atividades.
@@ -35,7 +32,7 @@ Um sistema web desenvolvido em PHP para gestão de atividades escolares/académi
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/projatividades_crud_bootstrap_php.git
+git clone https://github.com/smpsandro1239/projatividades_crud_bootstrap_php.git
 ```
 
 2. Importe o arquivo SQL para criar a base de dados:
@@ -145,7 +142,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) 
 * etc
 
 ---
-⌨️ com ❤️ por [Paula Fernandes](https://github.com/seu-usuario) 😊
+⌨️ com ❤️ por [Paula Fernandes](https://github.com/smpsandro1239/) 😊
 ```
 
 Este README.md fornece:
